@@ -1,0 +1,55 @@
+.navigation{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Primary */
+.primary{
+    list-style: none;
+    background-color: #97eaff;
+}
+.primary > li{
+    display: inline-block;
+    margin-right: 3rem;
+}
+.primary > li > a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+ 
+/* Secondary */
+.secondary li{
+    display: block;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.secondary{
+    display: none;
+    position: absolute;
+    background-color: #a2c2ca;
+    padding-left: 0;
+}
+.primary li:hover .secondary{
+	display: block;
+}
+
+/* Trinary */
+.trinary li{
+    display: block;
+}
+
+.trinary{
+    display: none;
+    position: absolute;
+    width: 100px;
+    background-color: #c9c9c9;
+    left: 52px;
+    top: 0;
+}
+.secondary li:hover .trinary{
+	display: block;
+}
