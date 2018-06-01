@@ -1,0 +1,63 @@
+.navigation{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+
+    >ul>li{
+        margin-right: 3rem;
+    }
+}
+
+.primary{
+    list-style: none;
+    background-color: #97eaff;
+
+    >li{
+        display: inline-block;
+
+        >a{
+            display: block;
+            color: black;
+            text-decoration: none;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+    }
+
+    >li:hover .secondary{
+        display: block;
+    }
+}
+
+ 
+/* Secondary */
+.secondary{
+    display: none;
+    position: absolute;
+    background-color: #a2c2ca;
+    padding-left: 0;
+
+    li{
+        display: block;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+
+    li:hover .trinary{
+        display: block;
+    }
+}
+
+/* Trinary */
+.trinary{
+    display: none;
+    position: absolute;
+    width: 100px;
+    background-color: #c9c9c9;
+    left: 100%;
+    top: 0;
+    padding-left: 10px;
+
+    li{
+        display: block;
+    }
+}
